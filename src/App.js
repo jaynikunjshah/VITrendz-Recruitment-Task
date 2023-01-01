@@ -31,7 +31,12 @@ function App() {
   }
 
   const handleSubmit = () => {
+    if(!hasPhoto){
+      alert('Please Capture Image')
+    }
+    else{
     setSubmittedState(true)
+    }
   }
 
   if(submittedState){
@@ -47,6 +52,7 @@ function App() {
         <img
           alt='CapturedImage'
           src={imgSrc}
+          className='capturedimg'
         />
       : <Webcam
       audio={false}
@@ -54,16 +60,17 @@ function App() {
       height={250}
       width={250}
       screenshotFormat="image/jpeg"
+      onUserMediaError={(e) => {alert(e.message)}}
       className='cam'
     /> }
-    <button onClick={capture}>Capture Photo</button>
-    <button onClick={reset}>Reset</button>
+    <button onClick={capture} className='photocapturebutton'>Capture Photo</button>
+    <button onClick={reset} className='resetbutton'>Reset</button>
     <form onSubmit={handleSubmit}> 
         <input type='text' placeholder='Enter Name' className='nameinputfield' value={name} onChange={(e) => {setName(e.target.value)}} required/>
         <input type='email' placeholder='Enter VIT Email' pattern='.+@vitstudent\.ac\.in' className='emailinputfield' value={email} onChange={(e) => {setEmail(e.target.value)}} required/>
         <input type='number' placeholder='Enter Number' className='numberinputfield' value={number} onChange={(e) => {setNumber(e.target.value)}} required/>
         <input type='text' placeholder='Enter Address' className='addressinputfield' value={address} onChange={(e) => {setAddress(e.target.value)}} required/>
-        <input type="submit" value="Submit"/>
+        <input type="submit" value="Submit" className='submitbutton'/>
     </form>    
     </div>
   );

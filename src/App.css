@@ -1,3 +1,116 @@
 .App {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-color: blanchedalmond;
+}
+.capturedimg{
+  position: relative;
+  right: 20%;
+  top: 20%;
+  height: 50%;
+  width: 20%;
+  border-radius: 5%;
+}
+.cam{
+  position: relative;
+  right: 20%;
+  top: 20%;
+  height: 50%;
+  width: 20%;
+  border-radius: 5%;
+}
+.photocapturebutton{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  position: relative;
+  font-weight: bold;
+  top: 30%;
+  right: 35%;
+  background-color: rgb(235, 194, 144);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 5%;
+  width: 10%;
+}
+.photocapturebutton:hover{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  background-color: azure;
+}
+.resetbutton{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  position: relative;
+  font-weight: bold;
+  top: 40%;
+  right: 15%;
+  background-color: rgb(235, 194, 144);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 5%;
+  width: 10%;
+}
+.resetbutton:hover{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  background-color: azure;
+}
+.nameinputfield{
+  position: relative;
+  bottom: 250px;
+  left: 50%;
+  height: 30px;
+  width: 15%;
+  border-style: none;
+  border-radius: 5px;
+}
+.emailinputfield{
+  position: relative;
+  bottom: 200px;
+  left: 34.7%;
+  height: 30px;
+  width: 15%;
+  border-style: none;
+  border-radius: 5px;
+}
+.numberinputfield{
+  position: relative;
+  bottom: 150px;
+  left: 19.5%;
+  height: 30px;
+  width: 15%;
+  border-style: none;
+  border-radius: 5px;
+}
+.addressinputfield{
+  position: relative;
+  bottom: 100px;
+  left: 4.2%;
+  height: 30px;
+  width: 15%;
+  border-style: none;
+  border-radius: 5px;
+}
+.submitbutton{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  position: relative;
+  font-weight: bold;
+  right: 8.3%;
+  background-color: rgb(235, 194, 144);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 10%;
+}
+.submitbutton:hover{
+  transition: ease-in;
+  transition-duration: 0.2s;
+  background-color: azure;
 }
