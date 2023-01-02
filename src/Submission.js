@@ -18,7 +18,7 @@ function Submission() {
   }
 
   return (
-    <div>
+    <div className='submissionpage'>
         <h1 className='congratulationstext'>Congratulations</h1>
         <button className='gobackbutton' onClick={buttonClicked}>Go Back</button>
         <img src={image} className='capturedimage' alt='Captured Image'></img>

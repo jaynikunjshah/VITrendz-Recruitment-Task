@@ -48,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <h4 className='heading'>VITrendz Recruitment Page</h4>
       { hasPhoto ? 
         <img
           alt='CapturedImage'
