@@ -36,6 +36,12 @@
   height: 5%;
   width: 10%;
 }
+.heading{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5%;
+}
 .photocapturebutton:hover{
   transition: ease-in;
   transition-duration: 0.2s;

@@ -1,0 +1,39 @@
+.submissionpage{
+    height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.congratulationstext{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 2%;
+}
+.gobackbutton{
+    transition: ease-in;
+  transition-duration: 0.2s;
+  position: relative;
+  font-weight: bold;
+  top: 20%;
+  right: -10%;
+  background-color: rgb(235, 194, 144);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 5%;
+  width: 10%;
+}
+.gobackbutton:hover{
+    transition: ease-in;
+  transition-duration: 0.2s;
+  background-color: azure;
+}
+.capturedimage{
+    position: relative;
+    border-radius: 10px;
+    top: 8%;
+    right: 4.8%;
+}
